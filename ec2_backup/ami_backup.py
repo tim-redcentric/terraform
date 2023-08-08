@@ -1,6 +1,9 @@
+
+#!/usr/bin/env python3
 import boto3
 import datetime
 
+print ("hello world")
 def lambda_handler(event, context):
     ec2 = boto3.client('ec2')
     now = datetime.datetime.now()
