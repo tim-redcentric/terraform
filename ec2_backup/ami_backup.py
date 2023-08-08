@@ -7,9 +7,9 @@ def lambda_handler(event, context):
     
     # Create a new AMI
     response = ec2.create_image(
-        InstanceId='your-instance-id',  # Replace with your instance ID
-        Name=f'Backup-AMI-{now.strftime("%Y-%m-%d-%H-%M-%S")}',
-        Description='Automated backup',
+        InstanceId='i-0c696286c9a30e840',  # Replace with your instance ID
+        Name=f'timsamanchi-Backup-AMI-{now.strftime("%Y-%m-%d-%H-%M-%S")}',
+        Description='tim samanchi - Automated backup test',
         NoReboot=True
     )
     
